@@ -40,9 +40,9 @@ docker secret create server-config server-config.json
 Finally pull the image and run it:
 
 ```
-docker pull cabasvert/cabasvert-server:dev
+docker pull cabasvert/cabasvert-server:latest
 docker service create --name cabasvert-server -p 80:8080 \
   --secret source=server-config,target=server-config.json,uid=1000,gid=1000,mode=0400 \
   -e SERVER_CONFIG_FILE=/run/secrets/server-config.json \
-  cabasvert/cabasvert-server:dev
+  cabasvert/cabasvert-server:latest
 ```
