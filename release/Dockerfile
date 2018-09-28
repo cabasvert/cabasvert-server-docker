@@ -1,7 +1,7 @@
 FROM node:8.9.4-alpine
 
 ENV SERVER_VERSION 0.2.1
-ENV CLIENT_VERSION 0.3.0-beta.6
+ENV CLIENT_VERSION 0.3.0-beta.7
 ENV SERVER_CONFIG_FILE /usr/src/app/config.json
 
 ENV SERVER_ARCHIVE cabasvert-node-${SERVER_VERSION}.tgz
