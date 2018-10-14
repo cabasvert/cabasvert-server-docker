@@ -1,13 +1,13 @@
 FROM node:8.9.4-alpine
 
-ENV SERVER_VERSION 0.2.1
-ENV CLIENT_VERSION 0.3.0-beta.9
+ENV SERVER_VERSION 0.2.2-beta.4
+ENV CLIENT_VERSION 0.3.0-beta.15
 ENV SERVER_CONFIG_FILE /usr/src/app/config.json
 
-ENV SERVER_ARCHIVE cabasvert-node-${SERVER_VERSION}.tgz
-ENV SERVER_URL https://github.com/cabasvert/cabasvert-server/releases/download/v${SERVER_VERSION}/${SERVER_ARCHIVE}
+ENV SERVER_ARCHIVE cabasvert-server-${SERVER_VERSION}.tgz
+ENV SERVER_URL https://github.com/cabasvert/cabasvert/releases/download/%40cabasvert%2Fserver%40${SERVER_VERSION}/${SERVER_ARCHIVE}
 ENV CLIENT_ARCHIVE cabasvert-client-browser-${CLIENT_VERSION}.tar.gz
-ENV CLIENT_URL https://github.com/cabasvert/cabasvert-client/releases/download/v${CLIENT_VERSION}/${CLIENT_ARCHIVE}
+ENV CLIENT_URL https://github.com/cabasvert/cabasvert/releases/download/%40cabasvert%2Fclient%40${CLIENT_VERSION}/${CLIENT_ARCHIVE}
 
 # Add Tini
 #ENV TINI_VERSION v0.16.1
