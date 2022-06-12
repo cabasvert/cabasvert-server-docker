@@ -1,4 +1,4 @@
-FROM node:8.9.4-alpine
+FROM node:14-alpine
 
 ENV SERVER_VERSION 0.2.2
 ENV CLIENT_VERSION 0.3.0
